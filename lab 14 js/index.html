@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 4: Функции JS</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktY29kZS1zcXVhcmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZD0iTTE0IDFhMSAxIDAgMCAxIDEgMXYxMmExIDEgMCAwIDEtMSAxSDJhMSAxIDAgMCAxLTEtMVYyYTEgMSAwIDAgMSAxLTFoMTJ6TTIgMGEyIDIgMCAwIDAtMiAydjEyYTIgMiAwIDAgMCAyIDJoMTJhMiAyIDAgMCAwIDItMlYyYTIgMiAwIDAgMC0yLTJIMnoiLz4KICA8cGF0aCBkPSJNNi44NTQgNC42NDZhLjUuNSAwIDAgMSAwIC43MDhMNC4yMDcgOGwyLjY0NyAyLjY0NmEuNS41IDAgMCAxLS43MDguNzA4bC0zLTNhLjUuNSAwIDAgMSAwLS43MDhsMy0zYS41LjUgMCAwIDEgLjcwOCAwem0yLjI5MiAwYS41LjUgMCAwIDAgMCAuNzA4TDExLjc5MyA4bC0yLjY0NyAyLjY0NmEuNS41IDAgMCAwIC43MDguNzA4bDMtM2EuNS41IDAgMCAwIDAtLjcwOGwtMy0zYS41LjUgMCAwIDAtLjcwOCAweiIvPgo8L3N2Zz4=" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+
+</head>
+
+<body>
+  <div align="center" class="mb-5">
+  <div class="head-container b-shadow">
+
+    
+    <div style="text-align: start; margin-left: 20px; margin-top: 20px;" >
+    <h2>Чёрный Андрей</h2>
+    <div style=" color:white !important; font-size: 0.8em;" class="mt-1">
+       <a href="https://ceiti.md"  class="link-secondary" style="text-decoration: none; color:white !important;"  >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-bank" viewBox="0 0 16 16">
+        <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+      </svg> CEITI </a>
+
+      <span class="ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-people-fill" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+      </svg> P-2033R
+      </span>
+
+      <span class="ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg> Chișinau
+      </span>
+
+    </a>
+    </div>
+    
+    <div class="Contactme">
+    <hr>
+    <span>Contact:</span>
+    <a href="https://t.me/leankey" style="text-decoration: none;" target="_blank" class="ms-2"><svg
+     xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+      fill="white" class="bi bi-telegram" viewBox="0 0 16 16" >
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+    </svg></a>
+
+    <a href="mailto:ciorniiandrei373@gmail.com" style="text-decoration: none;" target="_blank" class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+    </svg></a>
+
+    <a href="https://vk.com/benjikey" class="ms-2" target="_blank" ><img src="https://free-png.ru/wp-content/uploads/2020/04/VK_Monochrome_Logo_t-340x340.png" alt="" width="16"></a>
+
+    <a href="https://www.instagram.com/leankey.exe/" style="text-decoration: none;" target="_blank" class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </svg></a>
+
+    <a href="https://moodle1.ceiti.md/user/profile.php?id=7042" class="ms-2" target="_blank" ><img src="https://moodle2.uni-potsdam.de/pluginfile.php/1/theme_adaptable/adaptablemarkettingimages/0/logo_moodle_weiss.png" alt="" width="20"></a>
+
+  </div>
+  </div>
+
+  <div style="display: flex; text-align: center; font-size: 5em; font-weight: 600; " id="lab">
+    Лабораторная работа 4
+  </div>
+
+  <img class="img-circle-shadow" id="imgProfile"
+    src="https://i.ibb.co/D4D29hy/2023-03-18-161859792-removebg-preview.png"
+    alt="">
+  </div>
+</div>
+
+  <div align="center">
+
+    <div class="accordion accordion-flush w-50 b-shadow" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne" style="background-color: #FFF1DC !important; ">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Задание <span class="badge rounded color1"
+              style="margin-left: 5px !important; font-size: 0.85em">1</span>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="w-75 condition">
+              <p>
+                Некоторая компания, при передаче данных через телефон, обеспокоена тем, что телефоны могут прослушиваться. Все данные передаются, как четырехзначные целые числа. Напишите программу в JavaScript с использованием функции, которая шифрует эти данные. Скрипт читает четырехзначное число в окне prompt и шифрует его следующим образом: каждая цифра заменяется на сумму цифры с числом 7 в остатке при делении на 10. Затем первая цифра меняется с третьей, а вторая с четвертой. Выведите полученный код. 
+              </p>
+            </div>
+            <div class="task w-50 d-block">
+                <div class="d-flex">
+                    <div class="w-50 p-2">
+                        <input type="text" class="form-control" min="1000" max="9999" onchange="checkInput()" value="1000" id="Task1NumberInput"  onkeypress="return isNumberKey(event)" style="font-size: 0.9 !important;">
+                         </div>
+        
+                         <div  class="w-50 p-2">
+                            <button  class="btn color2" style="width: 100%;" onclick="encrypt()">Зашифровать</button>
+                         </div>
+                </div>
+                
+
+                 <div>
+                    <span  class="badge rounded color1 ms-2"  id="Task1result" style="display: none; font-size: 1.5em !important;" > </span>
+                 </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Задание <span class="badge rounded color1"
+              style="margin-left: 5px !important; font-size: 0.85em">2</span>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+
+            <div class="w-75 condition">
+              <p>
+               Создайте html форму, содержащую 3 поля ввода для ввода 3 сторон треугольника, кнопку «Вычислить» и поля ввода для вывода результатов. Создайте файл *.js, содержащий функции, вычисляющие периметр, площадь и вид треугольника по его сторонам. Используя CSS стили, примените дизайн к странице. 
+              </p>
+            </div>
+            <div class="task w-50 d-flex" style="text-align: center !important;">
+              <div class="row">
+                <div class="col-4 d-block p-3 frm2">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text color1 t-wht" style="font-weight: 600;" id="basic-addon1">A</span>
+                    <input type="number" class="form-control" min="0" value="5" id="LenghtA"
+                     oninput="trianglearea(Number(this.value), Number(document.getElementById('LenghtB').value), Number(document.getElementById('LenghtC').value))">
+                  </div>
+                  
+                </div>
+
+                <div class="col-4 d-block p-3">
+                  <div class="input-group mb-3 frm2">
+                    <span class="input-group-text color1 t-wht" style="font-weight: 600;" id="basic-addon1">B</span>
+                    <input type="number" class="form-control"  min="0" value="6" id="LenghtB"
+                    oninput="trianglearea(Number(document.getElementById('LenghtA').value), Number(this.value), Number(document.getElementById('LenghtC').value))"  >
+                  </div>
+                  
+                </div>
+
+                <div class="col-4 d-block p-3">
+                  <div class="input-group mb-3 frm2">
+                    <span class="input-group-text color1 t-wht" style="font-weight: 600;" id="basic-addon1">C</span>
+                    <input type="number" class="form-control"  min="0" value="7" id="LenghtC"
+                    oninput="trianglearea(Number(document.getElementById('LenghtA').value), Number(document.getElementById('LenghtB').value), Number(this.value))" >
+                  </div>
+                  
+                </div>
+
+                <hr>
+                <div>
+                <span class="textresult">Результат: </span>
+                <span id="Task2result" class="badge rounded color1 ms-2" style="font-size:1.2em;">14.70</span>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Задание <span class="badge rounded color1"
+              style="margin-left: 5px !important; font-size: 0.85em">3</span>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="w-75 condition">
+              <p>
+                Напишите функцию distanta которая вычисляет расстояние между двумя точками (x1, y1) и (x2, y2). Все значения должны быть вещественного типа. Вам понадобиться функция Math.sqrt для вычисления квадратного корня. Используйте эту функцию в скрипте, который позволяет пользователю ввести координаты точек в форму HTML и выводит результат в этой же форме.
+              </p>
+            </div>
+            <div class="task w-50 d-block" style="text-align: center !important; ">
+              <span>Координаты первой точки:</span>
+              <div class="input-group mb-3 " id="input-group-task3">
+                <span class="input-group-text color1 t-wht">X</span>
+                <input type="number" class="form-control" id="x1" value="0" oninput = "distanta()" >
+                <span class="input-group-text color1 t-wht">Y</span>
+                <input type="number" class="form-control" id="y1" value="0" oninput = "distanta()">
+              </div>
+
+              <span>Координаты второй точки:</span>
+              <div class="input-group mb-3 " id="input-group-task3">
+                <span class="input-group-text color1 t-wht">X</span>
+                <input type="number" class="form-control" id="x2" value="0" oninput = "distanta()" >
+                <span class="input-group-text color1 t-wht">Y</span>
+                <input type="number" class="form-control" id="y2" value="0" oninput = "distanta()">
+              </div>
+              
+            
+              
+            <hr>
+            <div class="d-flex">
+            <span class="textresult">Результат: </span>
+            <span id="Task3result" class="badge rounded color1 ms-2" style="font-size:1.2em; display: none;"></span>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Задание <span class="badge rounded color1"
+              style="margin-left: 5px !important; font-size: 0.85em">4</span>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="w-75 condition " style="text-align: center !important;">
+            <p style="text-align: justify;">4.	Создайте html форму, показанную на рисунке. При нажатии на кнопку «Итого» вычислите общую сумму всех значений полей. Создайте файл *.js, содержащий функцию, вычисляющую итоговую сумму. Используя CSS стили, примените дизайн к странице. </p>
+            </div>
+            <div class="task w-50 "  style="text-align: center; display: block;
+            flex-direction: column;" >
+              <span class="badge rounded color1 mb-4" style="font-size: 1.2rem;">Оплата комунальных услуг</span>
+
+              
+              <div class="input-group mb-3 ">
+                <span class="input-group-text color1 t-wht" style="font-weight: 600;" id="basic-addon1">Электроэнергия</span>
+                <input type="number" class="form-control"   min="0" value="0" id="1t4">
+                <span class="input-group-text">mdl</span>
+                </div>
+              
+
+                <div class="input-group mb-3 ">
+                  <span class="input-group-text color1 t-wht" style="font-weight: 600;" id="basic-addon1">Отопление</span>
+                  <input type="number" class="form-control"   min="0" value="0" id="2t4">
+                  <span class="input-group-text">mdl</span>
+                  </div>
+
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text color1 t-wht" style="font-weight: 600;" id="basic-addon1">Газ</span>
+                    <input type="number" class="form-control"   min="0" value="0" id="3t4">
+                    <span class="input-group-text">mdl</span>
+                  </div>
+                
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text color1 t-wht" style="font-weight: 600;" id="basic-addon1">Интернет</span>
+                    <input type="number" class="form-control"   min="0" value="0" id="4t4">
+                    <span class="input-group-text">mdl</span>
+                  </div>
+
+                  <div class="input-group mb-3 ">
+                    <span class="input-group-text color1 t-wht" style="font-weight: 600;" id="basic-addon1">Телефон</span>
+                    <input type="number" class="form-control"   min="0" value="0" id="5t4">
+                    <span class="input-group-text">mdl</span>
+                  </div>
+
+                  <button class="btn color1" onclick="itogo()">Итого
+                  </button>
+
+                  
+                  <hr>
+                  <span style="font-weight: 600; font-size: 1.6em; margin-top: 10px;" id="Task4result"> </span>
+
+
+
+
+            </div>
+           
+          </div>
+        </div>
+        </div>
+
+       
+        </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

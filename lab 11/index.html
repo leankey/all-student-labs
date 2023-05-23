@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11: Формы</title>
+    <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktaW5wdXQtY3Vyc29yLXRleHQiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNSAyYS41LjUgMCAwIDEgLjUtLjVjLjg2MiAwIDEuNTczLjI4NyAyLjA2LjU2Ni4xNzQuMDk5LjMyMS4xOTguNDQuMjg2LjExOS0uMDg4LjI2Ni0uMTg3LjQ0LS4yODZBNC4xNjUgNC4xNjUgMCAwIDEgMTAuNSAxLjVhLjUuNSAwIDAgMSAwIDFjLS42MzggMC0xLjE3Ny4yMTMtMS41NjQuNDM0YTMuNDkgMy40OSAwIDAgMC0uNDM2LjI5NFY3LjVIOWEuNS41IDAgMCAxIDAgMWgtLjV2NC4yNzJjLjEuMDguMjQ4LjE4Ny40MzYuMjk0LjM4Ny4yMjEuOTI2LjQzNCAxLjU2NC40MzRhLjUuNSAwIDAgMSAwIDEgNC4xNjUgNC4xNjUgMCAwIDEtMi4wNi0uNTY2QTQuNTYxIDQuNTYxIDAgMCAxIDggMTMuNjVhNC41NjEgNC41NjEgMCAwIDEtLjQ0LjI4NSA0LjE2NSA0LjE2NSAwIDAgMS0yLjA2LjU2Ni41LjUgMCAwIDEgMC0xYy42MzggMCAxLjE3Ny0uMjEzIDEuNTY0LS40MzQuMTg4LS4xMDcuMzM1LS4yMTQuNDM2LS4yOTRWOC41SDdhLjUuNSAwIDAgMSAwLTFoLjVWMy4yMjhhMy40OSAzLjQ5IDAgMCAwLS40MzYtLjI5NEEzLjE2NiAzLjE2NiAwIDAgMCA1LjUgMi41LjUuNSAwIDAgMSA1IDJ6Ii8+CiAgPHBhdGggZD0iTTEwIDVoNGExIDEgMCAwIDEgMSAxdjRhMSAxIDAgMCAxLTEgMWgtNHYxaDRhMiAyIDAgMCAwIDItMlY2YTIgMiAwIDAgMC0yLTJoLTR2MXpNNiA1VjRIMmEyIDIgMCAwIDAtMiAydjRhMiAyIDAgMCAwIDIgMmg0di0xSDJhMSAxIDAgMCAxLTEtMVY2YTEgMSAwIDAgMSAxLTFoNHoiLz4KPC9zdmc+" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+<div align="center">
+    <h1>Лабораторная работа <span class="badge" style="background-color: #69B7A2 !important;">11</span></h1>
+    
+    <h2>Чёрный Андрей</h2>
+    <h2>Вариант <span >1</span></h2>
+    
+</div>
+<div align="center">
+
+  <div class="w-50 rounded-3 h-25" style="border: solid rgb(192, 192, 192) 2px !important; background-color: rgb(233, 233, 233);">
+    <form action="">
+    <div class="p-3" id="bodyform">
+    <div class="row p-1 mb-1"><h4>Форма для добавления информации о квартире</h4> </div>
+
+    <div class="row text-lg-start">
+      <h6 style="color: #79a195;">Основная инфомация</h6>
+
+    <div class="col-md-3"> 
+
+      <label  class="form-label ms-2">Район</label>
+      <select class="form-select frm" aria-label="Chisinau" required>
+        <option selected>Chisinau mun.</option>
+        <option value="2">Ботаника</option>
+        <option value="3">Центр</option>
+        <option value="4">Чеканы</option>
+        <option value="5">Рышкановка</option>
+        <option value="6">Телецентр</option>
+        <option value="7">Скулянка</option>
+        <option value="8">Буюкань</option>
+        <option value="9">Старая почта</option>
+      </select>
+
+    </div>
+
+    <div class="col-md-6">
+
+      <label  class="form-label ms-2">Адрес</label>
+      <input type="text" class="form-control frm"  aria-describedby="emailHelp" required>
+
+    </div>
+
+    <div class="col-md-3">
+
+      <label  class="form-label ms-2">Цена</label>
+      <div class="input-group">
+        <span class="input-group-text" >€</span>
+        <input type="number" class="form-control frm" aria-label="Amount (to the nearest dollar)" maxlength="6" min="20000" max="500000" value="40000" step="1000" required>
+      </div>
+
+    </div>
+    </div> 
+
+    <hr style="width: 100%; border: solid gray 1px; margin-bottom: 10px; margin-top: 20px;"> 
+
+
+    <div class="row text-lg-start" >
+      <h6 style="color: #79a195;">Дополнительная инфомация</h6>
+      <div class="col-md-3 mb-2">
+
+
+        <label  class="form-label ms-2">Кол-во комнат
+        </label>
+        <div class="input-group">
+          <input type="number" class="form-control frm" aria-label="1" maxlength="2" min="1" max="10" value="2" step="1" required>
+        </div>
+
+      </div>
+
+      <div class="col-md-3">
+
+        <label  class="form-label ms-2">Общая площадь</label>
+        <div class="input-group">
+          <span class="input-group-text" >м<sup>2</sup></span>
+          <input type="number" class="form-control frm" aria-label="Amount (to the nearest dollar)" maxlength="3" min="20" max="500" value="90" step="1">
+        </div>
+
+      </div>
+
+      
+      <div class="col-md-3">
+
+        <label  class="form-label ms-2">Жилая площадь</label>
+        <div class="input-group">
+          <span class="input-group-text" >м<sup>2</sup></span>
+          <input type="number" class="form-control frm" aria-label="Amount (to the nearest dollar)" maxlength="3" min="20" max="500" value="60" step="1">
+        </div>
+
+      </div>
+
+      <div class="col-md-3">
+
+        <label  class="form-label ms-2">Этаж</label>
+        <div class="input-group">
+          
+          <input type="number" class="form-control frm" aria-label="Amount (to the nearest dollar)" maxlength="2" min="1" max="20" step="1">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row text-lg-start" >
+      <div class="col-md-3 mb-2">
+
+        <label class="form-label ms-2">Этажность</label>
+        <div class="input-group">
+          
+          <input type="number" class="form-control frm" aria-label="Amount (to the nearest dollar)" maxlength="1" min="1" max="4" step="1">
+        </div>
+
+      </div>
+
+      <div class="col-md-3"> 
+        <label  class="form-label ms-2">
+            Планировка
+        </label>
+        <select class="form-select frm" aria-label="Chisinau" required>
+          <option selected>Классическая</option>
+          <option value="1">Классическая</option>
+          <option value="2">Европланировка</option>
+          <option value="3">Студия</option>
+          <option value="4">Свободная</option>
+        </select>
+
+      </div>
+
+      <div class="col-md-3">
+        <label  class="form-label ms-2">Кол-во балконов</label>
+        <div class="input-group">
+          
+          <input type="number" class="form-control frm" aria-label="Amount (to the nearest dollar)" maxlength="1" min="1" max="4" step="1">
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label  class="form-label ms-2">Кол-во санузлов</label>
+        <div class="input-group">
+          
+          <input type="number" class="form-control frm" aria-label="Amount (to the nearest dollar)" maxlength="1" min="1" max="4" step="1">
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="row text-lg-start mt-2" style="font-size: 1em;" >
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Наличие телефона
+          </label>
+        </div>
+
+      </div>
+
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Наличие интернета
+          </label>
+        </div>
+
+      </div>
+
+      <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Новострой
+          </label>
+        </div>
+      </div>
+
+        <div class="col-md-3">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Вторичное жилье
+          </label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr style="width: 100%; border: solid gray 1px; margin-bottom: 10px; margin-top: 20px;"> 
+
+
+    <div class="row text-lg-start mt-2" style="font-size: 1em;" >
+      <div class="col-md-5 ">
+        <label for="formFile" class="form-label">Загрузить изображение</label>
+        <input class="form-control form-contro" id="formFile" type="file" style="font-size: 0.7em;" />
+
+        <div class="mb-3 mt-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Описание</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" disabled></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label frm ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+          </svg> Email:</label>
+          <input type="email" class="form-control frm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label frm ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg> Телефон:</label>
+          <input type="tel" class="form-control frm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0-XX-XXXXXX" required>
+        </div>
+    </div>
+    <div class="col-md-7">
+    <div class="imagebox mt-4">
+    <img id="preview" src="https://consumercomplaintscourt.com/wp-content/uploads/2015/12/no_uploaded.png" class="rounded float-md-none " style="max-width: 100%; max-height: 100%; object-fit: cover;">
+  </div>
+  </div>
+
+
+    <div></div>
+    </div>
+
+    <hr style="width: 100%; border: solid gray 1px; margin-bottom: 10px; margin-top: 20px;"> 
+    <div class="buttons">   
+        <input class="btn " type="submit" value="Отправить" style="background-color: #9adcca;">
+        <input class="btn btn-danger" type="reset" value="Очистить">
+
+
+    </div>
+  </form>
+
+
+
+
+  </div>
+  
+
+  </div>
+ 
+</div>
+    
+</body>
+
+
+<script>
+  const fileInput = document.querySelector('#formFile');
+const previewImg = document.querySelector('#preview');
+
+fileInput.addEventListener('change', () => {
+  const file = fileInput.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+      previewImg.setAttribute('src', reader.result);
+      previewImg.style.display = 'block';
+    });
+    reader.readAsDataURL(file);
+  }
+});
+</script>
+</html>

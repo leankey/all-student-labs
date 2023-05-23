@@ -1,0 +1,171 @@
+body{
+    background-color: #0F0C00;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='75.3' %3E%3Ccircle fill='%230F0C00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23281f00' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23362a00' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23413300' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%234b3b00' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23534100' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%235b4700' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23624d00' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23695200' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%236f5700' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23755c00' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%237b6000' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23806400' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23856800' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%238a6c00' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%238f7000' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23947300' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23987700' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;}
+
+
+@media screen and (max-width: 1000px){
+    #task1{
+        width: 95% !important;
+    }
+
+    #task2{
+        width: 95% !important;
+    }
+
+    td{
+        width: 50px !important; 
+        height: 50px !important;
+    }
+
+    .pagination {
+        display: inline !important;
+        flex-direction: row !important;
+      }
+
+    .pagination a{
+        padding: 2px 4px !important;
+        margin: 0 1px;
+        margin-bottom: 4px !important;
+    }
+
+    #task4{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 400px){
+    .navigation a{
+        width: 80% !important;
+
+    }
+
+    #nameheader {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+
+
+#accordionFlushExample {
+    border-radius: 5px !important;
+}
+
+.bold {
+    font-weight: bold   !important;
+}
+
+.t-align-left {
+    text-align: left  !important;
+}
+
+.t-align-j{
+    text-align: justify!important;
+}
+
+
+.firs-letter-yellow-paragraph::first-letter  {
+    color: #ffc107 !important;
+    font-style: italic;
+}
+
+.white {
+    color: white;
+}
+
+.first-word-yellow-paragraph::before{
+    content: "Начало: ";
+    color: #ffc107 !important;
+
+}
+
+.first-word-yellow-paragraph::after{
+    content: ":конец!";
+    color: green !important;
+
+}
+
+td{
+    width: 70px;
+    height: 70px;
+    
+}
+
+.chess tr:nth-child(odd) td:nth-child(odd) {
+	background: #ffc107;
+}	
+.chess tr:nth-child(even) td:nth-child(even) {
+	background: #ffc107;
+}
+
+.chess{
+    border: 2px solid white !important;
+}
+
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    background-color: rgb(64, 64, 64);;
+  }
+  
+  .pagination a.active {
+    background-color: #ffc107;
+    color: white;
+    border: 1px solid #ffc107;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #efefef; color: #c09107;}
+
+  .navigation{
+    display: flex;
+    flex-direction: column;
+    
+    align-content: left;
+    text-align: left;
+  }
+  
+  .navigation a{
+    width: 200px;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    background-color: rgb(64, 64, 64);
+    text-decoration: none;
+    margin: 3px;
+    
+  }
+  .navigation a:hover:not(.active) {background-color: #efefef; color: #c09107;}
+  
+  #task5{
+    display: block;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+ 
+  .linkheader{
+    text-decoration: none !important;
+    color: rgb(130, 130, 130);
+
+  }
+
+ 

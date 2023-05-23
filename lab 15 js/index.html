@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 4: Функции JS</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktY29kZS1zcXVhcmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZD0iTTE0IDFhMSAxIDAgMCAxIDEgMXYxMmExIDEgMCAwIDEtMSAxSDJhMSAxIDAgMCAxLTEtMVYyYTEgMSAwIDAgMSAxLTFoMTJ6TTIgMGEyIDIgMCAwIDAtMiAydjEyYTIgMiAwIDAgMCAyIDJoMTJhMiAyIDAgMCAwIDItMlYyYTIgMiAwIDAgMC0yLTJIMnoiLz4KICA8cGF0aCBkPSJNNi44NTQgNC42NDZhLjUuNSAwIDAgMSAwIC43MDhMNC4yMDcgOGwyLjY0NyAyLjY0NmEuNS41IDAgMCAxLS43MDguNzA4bC0zLTNhLjUuNSAwIDAgMSAwLS43MDhsMy0zYS41LjUgMCAwIDEgLjcwOCAwem0yLjI5MiAwYS41LjUgMCAwIDAgMCAuNzA4TDExLjc5MyA4bC0yLjY0NyAyLjY0NmEuNS41IDAgMCAwIC43MDguNzA4bDMtM2EuNS41IDAgMCAwIDAtLjcwOGwtMy0zYS41LjUgMCAwIDAtLjcwOCAweiIvPgo8L3N2Zz4=" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+
+</head>
+
+<body>
+  <div align="center" class="mb-5">
+  <div class="head-container b-shadow">
+
+    
+    <div style="text-align: start; margin-left: 20px; margin-top: 20px;" >
+    <h2>Чёрный Андрей</h2>
+    <div style=" color:white !important; font-size: 0.8em;" class="mt-1">
+       <a href="https://ceiti.md"  class="link-secondary" style="text-decoration: none; color:white !important;"  >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-bank" viewBox="0 0 16 16">
+        <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+      </svg> CEITI </a>
+
+      <span class="ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-people-fill" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+      </svg> P-2033R
+      </span>
+
+      <span class="ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg> Chișinau
+      </span>
+
+    </a>
+    </div>
+    
+    <div class="Contactme">
+    <hr>
+    <span>Contact:</span>
+    <a href="https://t.me/leankey" style="text-decoration: none;" target="_blank" class="ms-2"><svg
+     xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+      fill="white" class="bi bi-telegram" viewBox="0 0 16 16" >
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+    </svg></a>
+
+    <a href="mailto:ciorniiandrei373@gmail.com" style="text-decoration: none;" target="_blank" class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+    </svg></a>
+
+    <a href="https://vk.com/benjikey" class="ms-2" target="_blank" ><img src="https://free-png.ru/wp-content/uploads/2020/04/VK_Monochrome_Logo_t-340x340.png" alt="" width="16"></a>
+
+    <a href="https://www.instagram.com/leankey.exe/" style="text-decoration: none;" target="_blank" class="ms-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </svg></a>
+
+    <a href="https://moodle1.ceiti.md/user/profile.php?id=7042" class="ms-2" target="_blank" ><img src="https://moodle2.uni-potsdam.de/pluginfile.php/1/theme_adaptable/adaptablemarkettingimages/0/logo_moodle_weiss.png" alt="" width="20"></a>
+
+  </div>
+  </div>
+
+  <div style="display: flex; text-align: center; font-size: 5em; font-weight: 600; " id="lab">
+    Лабораторная работа 4
+  </div>
+
+  <img class="img-circle-shadow" id="imgProfile"
+    src="https://i.ibb.co/n63Vd3R/2023-03-18-161859792-removebg-preview-yellow.png"
+    alt="">
+  </div>
+</div>
+
+  <div align="center">
+
+    <div class="accordion accordion-flush w-50 b-shadow" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne" style="background-color: #FFF1DC !important; ">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Задание <span class="badge rounded color1"
+              style="margin-left: 5px !important; font-size: 0.85em">1</span>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="w-75 condition">
+              <p>
+                Дан объект {js:'test', jq: 'hello', css: 'world'}. Получите массив его ключей.
+              </p>
+            </div>
+            <div class="task w-50 d-block">
+                <div class="d-flex">
+                    
+        
+                         <div  class="w-100 p-2">
+                            <button  class="btn color2" style="width: 100%;" onclick="task1()">Показать ключи объекта </button>
+                         </div>
+                </div>
+                
+
+                 <div class="p-2">
+                    <span  class="badge rounded color1 ms-2"  id="task1span" style="display: none; font-size: 1.2em !important;" > </span>
+                 </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Задание <span class="badge rounded color1"
+              style="margin-left: 5px !important; font-size: 0.85em">2</span>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+
+            <div class="w-75 condition">
+              <p>
+                Таблица содержит зарплату работников цеха за текущий месяц. Найдите номер работника, зарплата которого наименее отклоняется от средней зарплаты всех работников за текущий месяц. Найдите фамилии двух работников с наибольшей зарплатой.
+              </p>
+            </div>
+
+
+            <div class="task w-50 d-block" style="text-align: center !important;">
+              <div  class="w-100 p-2">
+                            <button  class="btn color2" style="width: 100%;" onclick="findClosestToAverageEmployee(), findTwoHighestSalaryEmployees()">Показать таблицу работников </button>
+                         </div>
+
+
+              <span id="task2result1"></span>  
+              <span id="task2result2"></span>          
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Задание <span class="badge rounded color1"
+              style="margin-left: 5px !important; font-size: 0.85em">3</span>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="w-75 condition">
+              <p>
+                Сделай функцию js: Дан одномерный массив целых чисел A[1..n]. Напишите программу, которая перепишет в массив B[1..n] сначала в убывающем порядке все отрицательные элементы массива А, а затем в возрастающем порядке все положительные элементы массива А. Массивы выводятся на html страницу в виде: Массив A = [ , , , ] Массив B = [ , , , ]
+
+                Например, для   A = (4, -8, 7, -6, 0, -7, 5), получим    B = (-6, -7, -8, 0, 4, 5, 7).
+                
+              </p>
+            </div>
+            <div class="task w-50 d-block" style="text-align: center !important; ">
+              <div  class="w-100 p-2">
+                <button  class="btn color2" style="width: 100%;" onclick="sortArray()">Показать массивы: </button>
+             </div>
+             <hr>
+
+             <span id="arrayOriginal"></span>
+            <span id="arrayA"></span>  
+            <span id="arrayB"></span> 
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Задание <span class="badge rounded color1"
+              style="margin-left: 5px !important; font-size: 0.85em">4</span>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="w-75 condition " style="text-align: center !important;">
+            <p style="text-align: justify;">4.	Создайте web-страницу, содержащую 4 кнопки HTML. При нажатии на каждой кнопке появится окно alert, отображающее дату и время относительно текущей даты и времени. Первая кнопка Сейчас - текущие дата и время, вторая кнопка Вчера - дата и время 24 часа назад, третья кнопка -  дата и время 10 лет назад, четвертая кнопка - дата и время через неделю. </p>
+            </div>
+            <div class="task w-50 "   >
+            <div class="row" style="text-align: center; display: flex; justify-content: space-around;" >
+              <button  class="btn color1 w-25 p-2"  onclick="showNow()">Сейчас </button>
+              <button  class="btn color1 w-25 p-2"  onclick="showYesterday()">Вчера</button>
+  
+            </div>
+            <div class="row mt-2" style="text-align: center; display: flex; justify-content: space-around;" >
+              <button  class="btn color1 w-25 p-2"  onclick="show10YearsAgo()">10 лет назад </button>
+              <button  class="btn color1 w-25 p-2"  onclick="showNextWeek()">Через неделю</button>
+  
+            </div>
+            </div>
+           
+          </div>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Задание <span class="badge rounded color1"
+                style="margin-left: 5px !important; font-size: 0.85em">5</span>
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="w-75 condition " style="text-align: justify !important;">
+              <p>Выведите на экран количество секунд, которое осталось до конца дня.</p>
+              </div>
+              <div class="task w-50" >
+                <h5>Оставшееся время до конца дня:</h5>
+                <span id="task3span"></span>
+
+                <script>
+                  function updateTime() {
+                    var now = new Date();
+                    var endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+                    var diffInSeconds = Math.floor((endOfDay - now) / 1000);
+                    document.getElementById("task3span").innerHTML = diffInSeconds + " секунд";
+                  }
+
+                  updateTime();
+                  setInterval(updateTime, 1000);
+                </script>
+
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              Задание <span class="badge rounded color1"
+                style="margin-left: 5px !important; font-size: 0.85em">6</span>
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="w-75 condition " style="text-align: justify !important;">
+              <p>Выведите название месяца за введенную дату. </p>
+              </div>
+              <div class=" w-50 task "  id="task6div">
+               <label class="form-label">Введите дату</label>
+               <input type="date" class="form-control w-50 mb-4"  id="task6input" onchange="displayMonth()">
+
+               <hr>
+               <h5 id="task6span" ></h5>
+        
+              </div>
+              
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              Задание <span class="badge rounded color1"
+                style="margin-left: 5px !important; font-size: 0.85em">7</span>
+            </button>
+          </h2>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="w-75 condition " style="text-align: justify !important;">
+              <p>7.	Введена строка символов. Группу символов, разделенную с одной или обеих сторон одним или несколькими пробелами и не содержащую внутри себя пробелов, назовем словом. «Перевернуть» каждое слово, сохранив неизменным их порядок в строке</p>
+              </div>
+              <div class="task w-75 d-block" >
+                
+                <label class="form-label">Введите строку</label>
+               <input type="text" class="form-control w-100 mb-4"  id="task7input" >
+               <button  class="btn color1" style="width: 100%;" onclick="reverseWords()">Перевернуть</button>
+               <hr>
+
+
+               <h5 id="task7span"></h5>
+
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+              Задание <span class="badge rounded color1"
+                style="margin-left: 5px !important; font-size: 0.85em">8</span>
+            </button>
+          </h2>
+          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="w-75 condition " style="text-align: left !important;">
+              <p>Напишите скрипт, считывающий номер телефона в формате (555) 555-5555. Скрипт должен использовать метод split объекта String  для извлечения кода страны (значение в скобках) и номера телефона. Выведите извлеченные данные в разных текстовых полях, как показано на рисунке.</p>
+              </div>
+              <div class="task w-50" >
+                <div class="row">
+                  <div class="col-6 p-2"> Введите номер телефона (555) 555-5555 </div>
+                  <div class="col-6 p-2"> <input type="text" class="form-control" id="task8input" oninput="extractPhoneNumber()"> </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3 p-2">Код страны</div>
+                  <div class="col-3 p-2"><h6 id="task8area"></h6></div>
+
+                  <div class="col-3 p-2"> Номер</div>
+                  <div class="col-3 p-2"><h6 id="task8num"></h6></div>
+                </div>
+              
+             </pre>
+              </div>
+                
+              
+             
+            </div>
+          </div>
+        </div>
+
+       
+        </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

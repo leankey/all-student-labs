@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10: Псевдоклассы и псевдоэлементы</title>
+    <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktZ2VhciIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNOCA0Ljc1NGEzLjI0NiAzLjI0NiAwIDEgMCAwIDYuNDkyIDMuMjQ2IDMuMjQ2IDAgMCAwIDAtNi40OTJ6TTUuNzU0IDhhMi4yNDYgMi4yNDYgMCAxIDEgNC40OTIgMCAyLjI0NiAyLjI0NiAwIDAgMS00LjQ5MiAweiIvPgogIDxwYXRoIGQ9Ik05Ljc5NiAxLjM0M2MtLjUyNy0xLjc5LTMuMDY1LTEuNzktMy41OTIgMGwtLjA5NC4zMTlhLjg3My44NzMgMCAwIDEtMS4yNTUuNTJsLS4yOTItLjE2Yy0xLjY0LS44OTItMy40MzMuOTAyLTIuNTQgMi41NDFsLjE1OS4yOTJhLjg3My44NzMgMCAwIDEtLjUyIDEuMjU1bC0uMzE5LjA5NGMtMS43OS41MjctMS43OSAzLjA2NSAwIDMuNTkybC4zMTkuMDk0YS44NzMuODczIDAgMCAxIC41MiAxLjI1NWwtLjE2LjI5MmMtLjg5MiAxLjY0LjkwMSAzLjQzNCAyLjU0MSAyLjU0bC4yOTItLjE1OWEuODczLjg3MyAwIDAgMSAxLjI1NS41MmwuMDk0LjMxOWMuNTI3IDEuNzkgMy4wNjUgMS43OSAzLjU5MiAwbC4wOTQtLjMxOWEuODczLjg3MyAwIDAgMSAxLjI1NS0uNTJsLjI5Mi4xNmMxLjY0Ljg5MyAzLjQzNC0uOTAyIDIuNTQtMi41NDFsLS4xNTktLjI5MmEuODczLjg3MyAwIDAgMSAuNTItMS4yNTVsLjMxOS0uMDk0YzEuNzktLjUyNyAxLjc5LTMuMDY1IDAtMy41OTJsLS4zMTktLjA5NGEuODczLjg3MyAwIDAgMS0uNTItMS4yNTVsLjE2LS4yOTJjLjg5My0xLjY0LS45MDItMy40MzMtMi41NDEtMi41NGwtLjI5Mi4xNTlhLjg3My44NzMgMCAwIDEtMS4yNTUtLjUybC0uMDk0LS4zMTl6bS0yLjYzMy4yODNjLjI0Ni0uODM1IDEuNDI4LS44MzUgMS42NzQgMGwuMDk0LjMxOWExLjg3MyAxLjg3MyAwIDAgMCAyLjY5MyAxLjExNWwuMjkxLS4xNmMuNzY0LS40MTUgMS42LjQyIDEuMTg0IDEuMTg1bC0uMTU5LjI5MmExLjg3MyAxLjg3MyAwIDAgMCAxLjExNiAyLjY5MmwuMzE4LjA5NGMuODM1LjI0Ni44MzUgMS40MjggMCAxLjY3NGwtLjMxOS4wOTRhMS44NzMgMS44NzMgMCAwIDAtMS4xMTUgMi42OTNsLjE2LjI5MWMuNDE1Ljc2NC0uNDIgMS42LTEuMTg1IDEuMTg0bC0uMjkxLS4xNTlhMS44NzMgMS44NzMgMCAwIDAtMi42OTMgMS4xMTZsLS4wOTQuMzE4Yy0uMjQ2LjgzNS0xLjQyOC44MzUtMS42NzQgMGwtLjA5NC0uMzE5YTEuODczIDEuODczIDAgMCAwLTIuNjkyLTEuMTE1bC0uMjkyLjE2Yy0uNzY0LjQxNS0xLjYtLjQyLTEuMTg0LTEuMTg1bC4xNTktLjI5MUExLjg3MyAxLjg3MyAwIDAgMCAxLjk0NSA4LjkzbC0uMzE5LS4wOTRjLS44MzUtLjI0Ni0uODM1LTEuNDI4IDAtMS42NzRsLjMxOS0uMDk0QTEuODczIDEuODczIDAgMCAwIDMuMDYgNC4zNzdsLS4xNi0uMjkyYy0uNDE1LS43NjQuNDItMS42IDEuMTg1LTEuMTg0bC4yOTIuMTU5YTEuODczIDEuODczIDAgMCAwIDIuNjkyLTEuMTE1bC4wOTQtLjMxOXoiLz4KPC9zdmc+" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-theme="dark">
+<div align="center">
+    <h1>Лабораторная работа <span class="badge bg-warning">10</span></h1>
+    
+    <div id="nameheader">
+    <h2 > 
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+      </svg>
+       Чёрный Андрей</h2>
+    </div>
+    <h2>Вариант <span >1</span></h2>
+    
+    
+</div>
+<div align="center">
+  <div class="accordion accordion-flush w-75" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Задание <span class="badge bg-warning"
+            style="margin-left: 5px !important; font-size: 0.85em;">1</span>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <div class="t-align-left" style="width: 60%; " id="task1">
+            <p class="bold white">Отрывок из книги</p>
+
+            <p class="firs-letter-yellow-paragraph white">Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она, чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.</p>
+
+            <p class="firs-letter-yellow-paragraph white">В середине разговора про политические действия Анна Павловна разгорячилась.</p>
+
+            <p class="firs-letter-yellow-paragraph white">Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы. Наш благодетель знает свое высокое призвание и будет верен ему. Вот одно, во что я верю.</p>
+
+            <p class="firs-letter-yellow-paragraph white">Я думаю, — сказал князь улыбаясь, — что ежели бы вас послали вместо нашего милого Винценгероде, вы бы взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю?</p>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Задание <span class="badge bg-warning"
+            style="margin-left: 5px !important; font-size: 0.85em;">2</span>
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <div class="t-align-j white" style="width: 60%;" id="task2">
+            <h2 >Отрывок из книги</h2>
+            
+            <p class="first-word-yellow-paragraph white"> Быть энтузиасткой сделалось ее обшественныу положением, и иногда, когда ей даже того не хотелось, она, чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
+            </p>
+
+            <p class="first-word-yellow-paragraph white"> В середине разговора про политические действия Анна
+                Павловна разгорячилась.</p>
+
+            <p class="first-word-yellow-paragraph white"> Ах, не говорите мне про Австрию! Я ничего не понимаю, может быть, но Австрия никогда не хотела и не хочет войны. Она предает нас. Россия одна должна быть спасительницей Европы.
+                Наш благодетель знает свое высокое призвание и будет верен evv.
+                Вот одно, во что я верю.</p>
+            
+            <p class="first-word-yellow-paragraph white"> Я думаю, - сказал князь улыбаясь, - что ежели бы вас послали вместо нашего милого Винценгероде, вы бы взяли приступом согласие прусского короля. Вы так красноречивы. Вы дадите мне чаю? </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Задание <span class="badge bg-warning"
+            style="margin-left: 5px !important; font-size: 0.85em;">3</span>
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+
+            <table class="chess">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>		
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>	
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>		
+            </table>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Задание <span class="badge bg-warning"
+              style="margin-left: 5px !important; font-size: 0.85em;">4</span>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body " id="task4">
+              
+            <div class="pagination">
+                <a href="#">&lt; Previous</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#" class="active">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">Next &gt;</a>
+                <a href="#">Last &raquo;</a>
+              </div>
+              
+            
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Задание <span class="badge bg-warning"
+              style="margin-left: 5px !important; font-size: 0.85em;">5</span>
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body " id="task5">
+
+            <div class="navigation">
+                <a href="#">Главная</a>
+                <a href="#">Новости</a>
+                <a href="#">Контакты</a>
+                <a href="#">О компании</a>
+                <a href="#">Как добраться</a>
+                
+              </div>
+           
+            
+            
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+    
+</body>
+</html>
